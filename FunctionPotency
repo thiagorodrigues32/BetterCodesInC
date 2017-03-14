@@ -1,0 +1,21 @@
+Function Potency
+Is Math.h for weak? :D
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x, n, som = 0, som2 = 0, i;
+    printf("Math.h eh para os fracos!\n\nEnter a number: ");
+    scanf("%d", &x);
+    printf("Enter a Exponent: ");
+    scanf("%d", &n);
+    som2 = x * x;
+    for(i = 2; i < n; i++){
+        som = som2 * x;
+        som2 = som;
+    }
+    printf("\nResult: %d\n", som2);
+    return 0;
+}
